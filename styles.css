@@ -13,9 +13,9 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width:1000px;
+    width:1005px;
     margin: 0px;
-    height: 1000px;
+    height: 1005px;
     
 }
 
