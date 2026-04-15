@@ -20,6 +20,10 @@ let generateSquares = function(){
 
     console.log(userFlexBasis)
 
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+
         for (let i=0; i<userInput; i++){
         const squareDiv = document.createElement("div");
         squareDiv.className="squareDiv";
@@ -30,9 +34,13 @@ let generateSquares = function(){
         squareDiv.addEventListener("mouseover", ()=>{
             squareDiv.style.backgroundColor = "green";
         
+        
     });
 }; 
-}; generateSquares();
+}; 
+
+generateSquares();
+
 //
 button.addEventListener("click",()=>{
     let value = Number(prompt("What dimensions?"));
@@ -40,7 +48,7 @@ button.addEventListener("click",()=>{
         alert("try again (make sure it's a positive whole number)");
     } else {
         promptNumber=value;
-        return generateSquares();
+        generateSquares();
     }
 });
 //number recieved from user via prompt
