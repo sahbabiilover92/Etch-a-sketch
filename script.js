@@ -44,8 +44,8 @@ generateSquares();
 //
 button.addEventListener("click",()=>{
     let value = Number(prompt("What dimensions?"));
-    if (!Number.isInteger(value) || value <= 0){
-        alert("try again (make sure it's a positive whole number)");
+    if (!Number.isInteger(value) || value <= 0 || value >100){
+        alert("try again (make sure it's a positive whole number less than 100)");
     } else {
         promptNumber=value;
         generateSquares();
