@@ -1,3 +1,14 @@
 #container {
-    
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100px;;
+}
+
+#squareDiv {
+    background-color: blue;
+    padding:20px;
+
 }
